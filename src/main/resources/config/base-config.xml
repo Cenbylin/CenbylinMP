@@ -1,0 +1,12 @@
+<config>
+	<user>
+		<username>admin</username>
+		<password>admin</password>
+		<city>440100</city><!--广州 -->
+	</user>
+	<user>
+		<username>admin1</username>
+		<password>admin1</password>
+		<city>440700</city><!--江门 -->
+	</user>
+</config>

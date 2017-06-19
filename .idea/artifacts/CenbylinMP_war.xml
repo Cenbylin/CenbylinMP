@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CenbylinMP:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="CenbylinMP.war">
+      <element id="artifact" artifact-name="CenbylinMP:war exploded" />
+    </root>
+  </artifact>
+</component>
