@@ -6,7 +6,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-
+import java.io.PrintWriter;
 
 
 public class MVCControler {
@@ -38,5 +38,18 @@ public class MVCControler {
         } catch (IOException e) {   
             e.printStackTrace();   
         }  
-    }   
+    }
+
+    /**
+     * 直接写出字符流
+     * @param response
+     * @param content
+     * @throws Exception
+     */
+    public static void writeString(HttpServletResponse response, String content) throws Exception{
+        PrintWriter out = response.getWriter();
+        out.write(content);
+        out.flush();
+        out.close();
+    }
 }
