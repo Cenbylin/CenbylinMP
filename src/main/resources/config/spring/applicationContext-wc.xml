@@ -13,5 +13,13 @@
 	http://www.springframework.org/schema/aop/spring-aop.xsd
 	http://www.springframework.org/schema/tx 
 	http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <!--bean处理器-->
+    <bean class="cn.cenbylin.mp.common.MsgBeanPostPrcessorImpl"/>
+	<!--消息创建器-->
 	<bean class="cn.cenbylin.mp.common.utils.MessageCreator"/>
+    <!--消息异步处理器-->
+    <bean class="cn.cenbylin.mp.message.MessageJobExecutor"/>
+	<!--消息拦截器包-->
+	<bean id="messageProcessorList" class="java.util.LinkedList"/>
+	<context:component-scan base-package="cn.cenbylin.mp.message.processor" />
 </beans>

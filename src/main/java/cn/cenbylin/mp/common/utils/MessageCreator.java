@@ -22,4 +22,18 @@ public class MessageCreator {
                 .append(text).append("</Content></xml>");
         return sb.toString();
     }
+
+    public static void main(String[] args) {
+        P a = new C();
+        System.out.println(a.doit());
+    }
+}
+abstract class P{
+    public abstract Object doit();
+}
+class C extends P{
+    @Override
+    public String doit() {
+        return "asa";
+    }
 }
